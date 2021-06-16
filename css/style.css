@@ -71,7 +71,7 @@ main {
 
 .white-wave {
 	position: relative;
-	top: 1px;
+	top: 2px;
 }
 
 .video-container {
@@ -86,7 +86,7 @@ main {
 	box-shadow: 1px 10px 13px rgba(0, 0, 0, 0.19);
 
 	margin-bottom: 80px;
-	margin-top: 80px;
+	margin-top: 120px;
 	height: auto;
 	width: 85%;
 }
@@ -108,7 +108,7 @@ main {
 
 h2 {
 	font-weight: 600;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .nosotros p {
@@ -129,11 +129,18 @@ h2 {
 .map {
 	display: flex;
 	justify-content: center;
-	margin: 10px 0px;
+	padding: 50px 0px;
+	border-radius: 10px;
+	filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.089));
+}
+
+.gray-wave-one {
+	position: relative;
+	top: 2px;
 }
 
 .informacion {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 .informacion-text {
 	background-color: #ecf0f1;
@@ -148,23 +155,29 @@ h2 {
 }
 
 .informacion-mercado h2 {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 .carousel-container {
 	background-color: #ecf0f1;
-	padding: 50px 0px;
-	box-shadow: 1px 10px 13px rgba(0, 0, 0, 0.19);
 }
 
+.carousel {
+	padding: 50px 0px;
+	filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.089));
+}
 .carousel-inner {
 	max-height: 195px;
-}
-
-.carousel-video {
-	border-radius: 3%;
-}
-
-.informacion-carousel {
 	border-radius: 10px;
+}
+
+.gray-wave-two {
+	position: relative;
+	top: -2px;
+}
+
+.container-contacto {
+	margin-top: 50px;
+	text-align: center;
+	letter-spacing: 1.8px;
 }
