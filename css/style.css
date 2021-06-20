@@ -1,16 +1,11 @@
-/* General */
+/* VARIABLES */
 :root {
-	--white: #e7d3af;
+	--white2: #ecf0f1;
+	--white1: #6a6c6d;
+	--gray: #34383c;
 }
-body::-webkit-scrollbar {
-	width: 0.5rem;
-	background: #333333;
-}
-body::-webkit-scrollbar-thumb {
-	background: #181818;
-	opacity: 0.5;
-	border-radius: 1.5rem;
-}
+
+/* GENERAL */
 html {
 	scroll-behavior: smooth;
 }
@@ -18,7 +13,7 @@ html {
 	overflow-x: hidden;
 }
 
-/* Styles */
+/* NAVBAR */
 
 .nav-logo {
 	height: 70px;
@@ -29,10 +24,7 @@ html {
 	align-items: flex-end;
 }
 
-main {
-	margin-top: 80px;
-}
-
+/* VIDEO */
 .bg {
 	background-image: url(./..//img/bg.jpg);
 	width: 100vw;
@@ -81,13 +73,14 @@ main {
 	width: 100vw;
 	justify-content: center;
 	align-items: center;
+	overflow-y: hidden;
 }
 .video {
-	border-radius: 15px;
-	box-shadow: 1px 10px 13px rgba(0, 0, 0, 0.19);
+	border-radius: 12.5px;
+	box-shadow: var(--shadow);
 
-	margin-bottom: 80px;
-	margin-top: 120px;
+	margin-bottom: 75px;
+	margin-top: 125px;
 	height: auto;
 	width: 85%;
 }
@@ -95,22 +88,24 @@ main {
 .nosotros {
 	display: flex;
 	flex-direction: column;
+	padding-top: 125px;
 }
 
 .nosotros-logo {
 	margin: auto;
-	width: 45%;
+	width: 50%;
 	height: auto;
+	margin-bottom: 50px;
 }
 
 .somos,
 .mision,
 .vision {
-	margin-top: 45px;
+	margin-top: 50;
 }
 
 .nosotros p {
-	color: #6a6c6d;
+	color: var(--white1);
 }
 
 .somos,
@@ -128,8 +123,8 @@ main {
 	display: flex;
 	justify-content: center;
 	padding: 50px 0px;
-	border-radius: 10px;
-	filter: drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.089));
+	border-radius: 12.5px
+	filter: drop-shadow(--shadow);
 }
 
 .gray-wave-one {
@@ -138,20 +133,20 @@ main {
 }
 
 .informacion {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 .informacion-quees {
-	margin-top: 45px;
+	margin-top: 50;
 }
 .informacion-text {
-	background-color: #ecf0f1;
-	padding: 0px 12px;
+	background-color: var(--white2);
+	padding: 0px 25px;
 }
 .mercadoLiniers {
 	width: 60%;
 }
 .informacion-text p {
-	color: #6a6c6d;
+	color: var(--white1);
 }
 
 .informacion-mercado {
@@ -163,18 +158,18 @@ main {
 .informacion-mercado h2 {
 	font-size: 1.3rem;
 	align-self: flex-end;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 .carousel-h2 {
-	background-color: #ecf0f1;
+	background-color: var(--white2);
 	margin: 0px;
 	text-align: center;
 	padding: 50px 0px 0px 0px;
 }
 
 .carousel-container {
-	background-color: #ecf0f1;
+	background-color: var(--white2);
 }
 
 .carousel {
@@ -183,23 +178,21 @@ main {
 }
 .carousel-inner {
 	max-height: 195px;
-	border-radius: 10px;
+	border-radius: 12.5px
+	
 }
 
 .gray-wave-two {
 	position: relative;
 	top: -2px;
+	
 }
 
 /* CONTACTO */
 .container-contacto {
-	margin-top: 50px;
 	text-align: center;
 	letter-spacing: 1.8px;
-}
-
-.container-contacto h4 {
-	margin: 25px 0px;
+	padding-top: 125px;
 }
 
 .container-contacto h5 {
@@ -212,7 +205,7 @@ main {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	color: #34383c;
+	color: var(--gray);
 }
 .contact-div p {
 	margin: auto 0px;
@@ -220,13 +213,29 @@ main {
 	font-size: 1.2rem;
 }
 
+.contact-form {
+	margin: 100px 0px;
+}
+.contact-form form{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+.contact-form form label,
+.contact-form form button 
+{
+	margin-top: 25px;
+}
+
+
 /* PRICES */
 
 .prices-bg {
 	background-image: url(./..//img/bg.jpg);
 	width: 100vw;
-	height: fit-content;
+	height: min-content;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .prices {
@@ -235,15 +244,38 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 75px;
 }
 
 .prices-title {
-	margin-top: 50px;
-	color: #ecf0f1;
+	margin: 50px 0px;
+	padding: 25px 0px;
+	color: var(--gray);
 	text-align: center;
 	letter-spacing: 1.8px;
+	background-color: var(--white2);
 }
 
 .card {
 	margin-top: 25px;
+	color: var(--gray);
+}
+
+/* FOOTER */
+.footerwave{
+	position: relative;
+	top: 5px;
+}
+footer{
+	font-size: .75rem;
+	background-color: var(--white2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer p{
+	color: var(--gray);
+}
+footer a{
+	color: rgb(0, 108, 122);
 }
