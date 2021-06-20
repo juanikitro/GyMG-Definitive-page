@@ -1,0 +1,30 @@
+#main,
+#footer,
+#header {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#main,
+#footer {
+	transition: opacity 0.8s ease-in-out;
+}
+#contenedor_carga {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.spinkit-center {
+	width: 100vw;
+	height: 100vh;
+}
+
+.spinkit-center div {
+	margin-top: 40vh;
+}

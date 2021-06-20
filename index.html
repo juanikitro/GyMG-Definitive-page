@@ -8,15 +8,27 @@
 		<link rel="icon" type="image/png" href="https://i.imgur.com/3M9SHbZ.png" />
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/scrollsnap.scss">
-		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="./css/charge.css">
+		<link rel="stylesheet" href="./node_modules/spinkit/spinkit.min.css">
+		
+		<!-- Scroll reveal -->
+		<script src="./scrollreveal.js"></script>
 
+		<!-- Bootstrap CSS-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
-		<header>
-			<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #ecf0f1;">
+		<div id="contenedor_carga">
+			<div id="carga">
+				<div class="spinkit-center" id="carga">
+					<div class="sk-plane sk-center"></div>
+	
+				</div>
+			</div>
+		</div>
+		<header id="header">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #ecf0f1; box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.089)">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#"
 						><img class="nav-logo" src="./img/navlogo.png" alt=""
@@ -30,11 +42,12 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 						style="border-radius: 12.5px;"
+						
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
 
-					<div class="collapse navbar-collapse" id="navbarColor03">
+					<div  class="collapse navbar-collapse" id="navbarColor03">
 						<ul class="navbar-nav me-auto">
 							<li class="nav-item">
 								<a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
@@ -52,49 +65,50 @@
 				</div>
 			</nav>
 		</header>
-        <main>
-            <section class="bg myfilter">
-                <div class="video-container ">
-                    <video preload="auto" controls loop autoplay=1 muted class="video" src="./video/Publicidad.mp4"></video>
+        <main id="main">
+            <section class="bg">
+                <div class="video-container">
+                    <video preload="auto" controls loop autoplay=1 muted class="video scrollToTop" src="./video/Publicidad.mp4"></video>
                     <svg class="white-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,133.3C240,128,300,96,360,106.7C420,117,480,171,540,197.3C600,224,660,224,720,213.3C780,203,840,181,900,144C960,107,1020,53,1080,53.3C1140,53,1200,107,1260,106.7C1320,107,1380,53,1410,26.7L1440,0L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
                 </div>
             </section>
 			<section id="sobre-nosotros" class="nosotros container">
 					<img src="./img/Logo.png" alt="Logo" class="nosotros-logo">
 					<div class="somos">
-						<h2>¿Quienes somos?</h2>
-						<p>GYMG es una empresa familiar fundada en 2012, con mas de 40 años de experiecia en el mercado ganadero. Somos Rafael y German Gutierrez, nuestras oficinas estan radicadas en el centro de la provincia de bs as, 25 de mayo. Comercializamos hacienda en el litoral, Santa Fe, Cordoba, La Pampa y toda la provincia de BS. AS.. siempre al srvicio del productor, atencion personalizada para un mejor desempeño.</p>
+						<h2 class="scrollToLeft">¿Quienes somos?</h2>
+						<p class="scrollToLeft">GYMG es una empresa familiar fundada en 2012, con más de 40 años de experiecia en el mercado ganadero. Somos Rafael y German Gutierrez, nuestras oficinas están radicadas en el centro de la provincia de Buenos Aires, 25 de Mayo. Comercializamos hacienda en el litoral, Santa Fe, Cordoba, La Pampa y toda la provincia de Buenos Aires. siempre al servicio del productor, atención personalizada para un mejor desempeño.</p>
 					</div>
 					<div class="mision">
-						<h2>Nuestra mision</h2>
-						<p>
+						<h2 class="scrollToRight">Nuestra mision</h2>
+						<p class="scrollToRight">
 							Operamos gordos, invernada y cria, todos lo plazos a convenir. Nuestra mision es que ambas partes queden satisfechas con en el desenlace de cada operación. Su consulta no molesta.
 						</p>
 					</div>
 					<div class="vision">
-						<h2>Vision</h2>
-						<p>
-							Agradecemos siempre al productor agropecuario ya que sin ellos seria muy dificil esta argentina, siempre poniendo el hombro y el esfuerzo para que la actividad agropecuaria sea cada dia mejor en nuestro querido pais.
+						<h2 class="scrollToLeft">Vision</h2>
+						<p class="scrollToLeft">
+							Agradecemos siempre al productor agropecuario ya que sin ellos seria muy dificil esta Argentina, siempre poniendo el hombro y el esfuerzo para que la actividad agropecuaria sea cada día mejor en nuestro querido país.
 						</p>
 					</div>
-					<div class="map">
-						<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d812.7147136673378!2d-60.17230499020429!3d-35.43352630788594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5069e2b33c771adc!2sG%20%26%20MG!5e0!3m2!1ses-419!2sar!4v1623792226014!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="auto"></iframe>
+					<div  class="map scrollToTop">
+						<iframe style="box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.089)" class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d812.7147136673378!2d-60.17230499020429!3d-35.43352630788594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5069e2b33c771adc!2sG%20%26%20MG!5e0!3m2!1ses-419!2sar!4v1623792226014!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="auto"></iframe>
 					</div>
 			</section>
             <section id="informacion"  class=" informacion">
 				<svg  class="gray-wave-one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ecf0f1" fill-opacity="1" d="M0,0L48,21.3C96,43,192,85,288,90.7C384,96,480,64,576,74.7C672,85,768,139,864,176C960,213,1056,235,1152,240C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 				<div class="informacion-text">
 					<div class="informacion-quees">
-						<h2 class="quees">¿Que es un consignatario?</h2>
-					<p>Los consignatarios y/o comisionistas de hacienda, trabajamos en la intermediacion de la compra y venta de ganado vacuno. Nos encargamos de la operacion de conseguir al correcto comprador para lo que el productor ofrece.</p>
+						<h2 class="quees scrollToLeft">¿Que es un consignatario?</h2>
+					<p class="scrollToLeft">Los consignatarios y/o comisionistas de hacienda, trabajamos en la intermediacion de la compra y venta de ganado vacuno. Nos encargamos de la operacion de conseguir al correcto comprador para lo que el productor ofrece.</p>
 					</div>
-					<div class="informacion-mercado">
-						<h2 class="mercadoLiniers">¿Y trabajan en el Mercado de Liniers?</h2>
+					<div class="informacion-mercado scrollToRight">
+						<h2 class="mercadoLinier scrollToRights">¿Y trabajan en el Mercado de Liniers?</h2>
 						<p>Los consignatarios no necesariamente estan en el Mercado de Liniers, si no que pueden trabajar en cualquier lado. En el Mercado de Liniers formado por los personajes de este negocio mas antiguos del pais, estos se encargan de regularizar y fijar los precios de la hacienda </p>
 					</div>
 				</div>
-				<h2 class="carousel-h2">¡Mira un poco de lo que tenemos para vos!</h2>
-				<div class="carousel-container">
+				<div class="carousel-bg">
+					<h2 class="carousel-h2 scrollToTop ">Mira un poco de lo que tenemos para vos</h2>
+				<div class="carousel-container scrollToTop ">
 					<div class="carousel container-fluid informacion-carousel">
 						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
@@ -119,43 +133,44 @@
 						  </div>
 					</div>
 				</div>
+				</div>
 			</section>
 			
 			<svg class="gray-wave-two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ecf0f1" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,96C384,128,480,224,576,240C672,256,768,192,864,149.3C960,107,1056,85,1152,74.7C1248,64,1344,64,1392,64L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 			<section id="contacto" class="container-contacto container">
-				<h2>CONTACTATE</h2>
-				<div class="contact-div contact-email1">
+				<h2 class="scrollToTop">CONTACTATE</h2>
+				<div class="contact-div contact-email1 scrollToLeft">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
 						<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
 					  </svg>
 					  <p>Ggutierrez@gymg.com.ar</p>
 				</div>
-				<div class="contact-div contact-email1">
+				<div class="contact-div contact-email1 scrollToLeft">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
 						<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
 					  </svg>
 					  <p>Rgutierrez@gymg.com.ar</p>
 				</div>
-				<div class="contact-div contact-email1">
+				<div class="contact-div contact-email1 scrollToLeft">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
 						<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
 					  </svg>
 					  <p>11 6204-5433</p>
 				</div>
-				<div class="contact-div contact-email1">
+				<div class="contact-div contact-email1 scrollToLeft">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
 						<path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
 					  </svg>
 					  <p>02345 465151</p>
 				</div>
-				<div class="contact-div contact-email1">
+				<div class="contact-div contact-email1 scrollToLeft">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
 						<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
 					  </svg>
 					  <p>GYMGDE25</p>
 				</div>
-				<div class="contact-form">
-					<h2>¡O mejor dejanos tu mensaje por aca!</h2>
+				<div class="contact-form scrollToTop">
+					<h2>O mejor dejanos tu mensaje por aca</h2>
 					<form
 					  action="https://formspree.io/f/xqkwbnra"
 					  method="POST"
@@ -175,9 +190,9 @@
 			<!-- PRECIOS -->
 			<section id="prices" class="prices-bg prices">
 				<div class="container prices-title">
-					<h2>¡Conoce tambien NUESTROS precios!</h2>
+					<h2 class="scrollToLeft">Conoce tambien NUESTROS precios</h2>
 				</div>
-				<div class="price-card">
+				<div class="price-card scrollToRight">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Invernada</div>
 						<div class="card-body">
@@ -186,7 +201,7 @@
 						</div>
 					  </div>
 				</div>
-				<div class="price-card">
+				<div class="price-card scrollToRight">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Vacas</div>
 						<div class="card-body">
@@ -195,7 +210,7 @@
 						</div>
 					  </div>
 				</div>
-				<div class="price-card">
+				<div class="price-card scrollToRight">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Novillos</div>
 						<div class="card-body">
@@ -204,7 +219,7 @@
 						</div>
 					  </div>
 				</div>
-				<div class="price-card">
+				<div class="price-card scrollToRight">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Granos</div>
 						<div class="card-body">
@@ -213,7 +228,7 @@
 						</div>
 					  </div>
 				</div>
-				<div class="price-card">
+				<div class="price-card scrollToRight">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Economia</div>
 						<div class="card-body">
@@ -223,16 +238,21 @@
 					  </div>
 				</div>
 			<img class="footerwave" src="./img/footerwave.svg" alt="">
-
 			</section>
-			
         </main>
-		<footer>
+		<footer id="footer">
 			<p>© Copyright 2021 GyMG - Todos los derechos reservados</p>
 			<p>visita nuestro instagram <a href="https://www.instagram.com/gymgde25/">aqui</a></p>
 			<p>Code for <a href="https://www.linkedin.com/in/juan-kitroser/">JPKitro</a></p>
 			<p>¡Gracias por ver!</p>
 		</footer>
+
+		<!-- js -->
+		<script src="./chargespin.js"></script>
+		<script src="./carouseltime.js"></script>
+
+		<!-- Scrollreveal -->
+		<script src="./scrollrevealscript.js"></script>
 
 		<!-- Bootstrap JS-->
 		<script
@@ -240,6 +260,5 @@
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
-		<script src="./index.js"></script>
 	</body>
 </html>
