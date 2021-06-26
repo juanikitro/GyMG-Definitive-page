@@ -2,6 +2,29 @@
 	width: 20%;
 }
 
+.video-container {
+	height: 100vh;
+}
+
+.video-container iframe {
+	margin-top: 125px;
+	width: 75vw;
+}
+
+.bg {
+	height: 150vh;
+}
+
+.hamburger,
+.hamburger--squeeze,
+.hamburger-box {
+	display: none;
+}
+
+.carousel-inner {
+	max-height: 500px;
+}
+
 .navbar-collapse {
-	flex-grow: 3;
+	flex-grow: 0 !important;
 }

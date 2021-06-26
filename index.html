@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html  lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,8 +9,9 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
-		<link rel="stylesheet" href="./css/laptop.css" media="screen and (min-width: 1024px)">
-		<link rel="stylesheet" href="./node_modules/spinkit/spinkit.min.css">
+		<link rel="stylesheet" href="./css/laptop.css" media="screen and (min-width: 991px)">
+		<link href="./css/hamburgers.css" rel="stylesheet">
+		
 		
 		<!-- Scroll reveal -->
 		<script src="./scrollreveal.js"></script>
@@ -26,20 +27,17 @@
 					<a class="navbar-brand" href="#"
 						><img class="nav-logo" src="./img/navlogo.png" alt=""
 					/></a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarColor03"
-						aria-controls="navbarColor03"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-						style="border-radius: 12.5px;"
-						
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
+					<button  class="hamburger hamburger--squeeze" 
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarColor03"
+					aria-controls="navbarColor03"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+						<span  class="hamburger-box">
+							<span style="overflow-x: visible; ;height: 4px; width: 40px; display: block;" class="hamburger-inner navbar-toggler-icon"></span>
+						</span>
+					  </button>
 					<div  class="collapse navbar-collapse" id="navbarColor03">
 						<ul class="navbar-nav me-auto">
 							<li class="nav-item">
@@ -170,7 +168,7 @@
 				<div class="contact-form scrollToTop">
 					<h2>O mejor dejanos tu mensaje por aca</h2>
 					<form
-					  action="https://formspree.io/f/xqkwbnra"
+					  action="https://formspree.io/f/mqkwlepw"
 					  method="POST"
 					>
 					  <label for="exampleInputEmail1" class="form-label">Tu email</label>
@@ -180,7 +178,7 @@
 					    Tu mensaje:
 					    <textarea style="border-radius: 12.5px"  placeholder="¡Quiero contactar con ustedes!" class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
 					  </label>
-						<button class="btn btn-primary" style="background-color: #34383c; border: #34383c; border-radius: 12.5px " type="submit">Enviar</button>
+						<button class="btn btn-primary" style="background-color: #34383c; border: #34383c; border-radius: 12.5px " type="submit" target="_blank" >Enviar</button>
 					</form>
 				</div>
 			</section>
@@ -190,7 +188,7 @@
 				<div class="container prices-title">
 					<h2 class="scrollToLeft">Conoce tambien NUESTROS precios</h2>
 				</div>
-				<div class="price-card scrollToRight">
+				<div class="price-card scrollToTop">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Invernada</div>
 						<div class="card-body">
@@ -199,7 +197,7 @@
 						</div>
 					  </div>
 				</div>
-				<div class="price-card scrollToRight">
+				<div class="price-card scrollToTop">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Vacas</div>
 						<div class="card-body">
@@ -208,7 +206,7 @@
 						</div>
 					  </div>
 				</div>
-				<div class="price-card scrollToRight">
+				<div class="price-card scrollToTop">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Novillos</div>
 						<div class="card-body">
@@ -217,7 +215,7 @@
 						</div>
 					  </div>
 				</div>
-				<div class="price-card scrollToRight">
+				<div class="price-card scrollToTop">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Granos</div>
 						<div class="card-body">
@@ -225,8 +223,8 @@
 						  <p class="card-text">$0,00</p>
 						</div>
 					  </div>
-				</div>
-				<div class="price-card scrollToRight">
+				</div>  
+				<div class="price-card scrollToTop">
 					<div class="card text-dark bg-light mb-3" style="width: 80vw; border-radius: 12.5px; text-align: center">
 						<div class="card-header">Economia</div>
 						<div class="card-body">
@@ -240,14 +238,25 @@
         </main>
 		<footer id="footer">
 			<p>© Copyright 2021 GyMG - Todos los derechos reservados</p>
-			<p>visita nuestro instagram <a href="https://www.instagram.com/gymgde25/">aqui</a></p>
-			<p>Code for <a href="https://www.linkedin.com/in/juan-kitroser/">JPKitro</a></p>
+			<p>visita nuestro instagram <a target="_blank" href="https://www.instagram.com/gymgde25/">aqui</a></p>
+			<p>Code for <a target="_blank" href="https://www.linkedin.com/in/juan-kitroser/">JPKitro</a></p>
 			<p>¡Gracias por ver!</p>
+			
 		</footer>
 
 		<!-- js -->
 		<script src="./chargespin.js"></script>
 		<script src="./carouseltime.js"></script>
+		<script>
+					// Look for .hamburger
+					var hamburger = document.querySelector(".hamburger");
+					// On click
+					hamburger.addEventListener("click", function() {
+					  // Toggle class "is-active"
+					  hamburger.classList.toggle("is-active");
+					  // Do something else, like open/close menu
+					});
+				  </script>
 
 		<!-- Scrollreveal -->
 		<script src="./scrollrevealscript.js"></script>
