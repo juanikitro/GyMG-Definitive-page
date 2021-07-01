@@ -28,3 +28,8 @@
 .navbar-collapse {
 	flex-grow: 0 !important;
 }
+
+.video {
+	width: 64vw;
+	border-radius: 12.5px;
+}
