@@ -56,13 +56,12 @@ p {
 	overflow-y: hidden;
 }
 .video {
-	border-radius: 12.5px;
 	box-shadow: var(--shadow);
 
 	margin-bottom: 75px;
 	margin-top: 175px;
 	height: 100%;
-	width: 90vw;
+	width: 100vw;
 }
 
 .white-wave {
