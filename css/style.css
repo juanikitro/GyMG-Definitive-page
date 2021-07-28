@@ -22,6 +22,23 @@ p {
 	overflow-y: hidden;
 }
 
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+::-webkit-scrollbar-thumb {
+	background: #b3afb3;
+	border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #b3afb3;
+}
+::-webkit-scrollbar-track {
+	background: #ffffff;
+	border-radius: 9px;
+	box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
+
 /* NAVBAR */
 
 .nav-logo {
@@ -33,11 +50,11 @@ p {
 	align-items: flex-end;
 }
 
-/* VIDEO */
+/* HERO */
 .bg {
 	background-image: url(./..//img/bg.jpg);
 	width: 100vw;
-	height: 100vh;
+	height: 125vh;
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -45,23 +62,62 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 }
-.video-container {
+
+.hero {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
-
-	justify-content: space-between;
 	align-items: center;
-	overflow-y: hidden;
+	padding-top: 75px;
+	margin: 93px 0 0 0;
+	color: var(--gray);
+	height: 100%;
 }
-.video {
-	box-shadow: var(--shadow);
 
-	margin-bottom: 75px;
-	margin-top: 175px;
-	height: auto;
-	width: 100vw;
+.CTA {
+	text-align: center;
+}
+
+.CTA h2 {
+	font-size: 3rem;
+}
+
+.CTA h1 {
+	overflow-y: hidden;
+	color: var(--white2);
+	text-shadow: 2px 2px 1px var(--gray);
+	font-size: 4rem;
+}
+
+.CTA strong {
+	color: var(--white2);
+	font-size: 2.5rem;
+	text-shadow: 2px 1px 1px var(--gray);
+}
+
+.hero-button {
+	width: 80vw;
+	text-align: center;
+	margin-top: 25px;
+	background-color: var(--white2);
+	padding: 25px;
+	font-size: 1.5rem;
+	border-radius: 12.5px;
+	box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.295);
+	transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+}
+
+.hero-button a {
+	color: var(--gray);
+	text-decoration: none;
+	font-weight: 400;
+}
+.hero-button a:hover {
+	color: var(--gray);
+}
+
+.hero-button:hover {
+	transform: translateY(2px);
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.295);
 }
 
 .white-wave {
@@ -86,7 +142,7 @@ p {
 .somos,
 .mision,
 .vision {
-	margin-top: 50;
+	margin-top: 75px;
 }
 
 .nosotros p {

@@ -6,6 +6,11 @@
 	height: 125vh;
 }
 
+.hero-button {
+	width: auto;
+	font-size: 1.7rem;
+}
+
 .carousel-inner {
 	max-height: 350px;
 }

@@ -2,17 +2,13 @@
 	width: 20%;
 }
 
-.video-container {
-	height: 100vh;
-}
-
-.video-container iframe {
-	margin-top: 125px;
-	width: 75vw;
-}
-
 .bg {
 	height: 150vh;
+}
+
+.hero-button {
+	width: auto;
+	font-size: 1.9rem;
 }
 
 .hamburger,
@@ -27,9 +23,4 @@
 
 .navbar-collapse {
 	flex-grow: 0 !important;
-}
-
-.video {
-	width: 64vw;
-	border-radius: 12.5px;
 }
